@@ -19,11 +19,11 @@
   </head>
 
   <body>
-    <nav>
-      <div>
-        <img src="./images/slack-logo.png" alt="Slack logo" />
+    <nav class="flex align-center justify-between">
+      <div class="flex align-center justify-between w-50">
+        <img src="./images/slack-logo.png" alt="Slack logo" class="main-logo" />
 
-        <ul>
+        <ul class="flex align-center nav-menu">
           <li>
             <a href="#">Product</a>
           </li>
@@ -39,20 +39,16 @@
         </ul>
       </div>
 
-      <div>
-        <h2>Hello world</h2>
-      </div>
-
-      <div>
-        <button>
+      <div class="flex justify-between">
+        <button class="search-button">
           <img src="./images/icon-search.png" alt="Search icon" />
         </button>
 
-        <button>
+        <button class="mobile-hidden burger-button">
           <img src="./images/icon-menu.png" alt="Menu icon" />
         </button>
 
-        <ul hidden>
+        <ul class="desktop-menu" hidden>
           <li>
             <a href="#">Sign in</a>
           </li>

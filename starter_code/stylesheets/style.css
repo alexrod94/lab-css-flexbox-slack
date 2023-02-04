@@ -8,3 +8,86 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* Utility classes */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.mobile-hidden {
+  display: block;
+}
+
+.main-logo {
+  width: 150px;
+  object-fit: contain;
+}
+
+nav {
+  background: #540b51;
+  padding: 20px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.search-button,
+.burger-button {
+  background: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+/* Desktop version */
+@media (min-width: 800px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 2;
+  }
+
+  .desktop-menu li {
+    padding: 0 10px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+  }
+}
